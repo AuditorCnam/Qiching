@@ -43,7 +43,7 @@ document.getElementById('myForm').onsubmit = function(event) {
         lastName: lastName
     };
 
-    fetch('https://monbeausite.azurewebsites.net/api/HttpTrigger1', {
+    fetch('https://monbeausite.azurewebsites.net/api/HttpTrigger1?code=AIYUdByTFvyrrq7uJ89s0yRmtrdRjY1jN8rbVWtGi9nWAzFum8LOrw==', {
         method: 'POST',
         body: JSON.stringify(data),
         headers: {
