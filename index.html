@@ -51,7 +51,7 @@ document.getElementById('myForm').onsubmit = function(event) {
             'Content-Type': 'application/json'
         }
     })
-    .then(response => response.json())
+    .then(response => JSON.parse(response))
     .then(data => {
         console.log('Success:', data);
     })
